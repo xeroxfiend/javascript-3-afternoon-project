@@ -56,4 +56,4 @@ let result = addNums(...numbers)
 let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
-// code here
+const combinedArrays = [...arr1, ...arr2]
