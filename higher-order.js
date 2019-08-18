@@ -164,10 +164,11 @@ const purchases = [{ "owner": "Barry", "price": 103 }, { "owner": "Bob", "price"
 // another try
 
 
-let bobsTotal = purchases.reduce(function(runningTotal, curElement, curIndex, wholeArray) {
+let bobsTotal = purchases.reduce(function(runningTotal, curElement) {
     if (curElement.owner === 'Bob') {
         return runningTotal + curElement.price
     }
+    return runningTotal
 }, 0)
 
 console.log(bobsTotal)
